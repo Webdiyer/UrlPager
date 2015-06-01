@@ -36,7 +36,8 @@
     <SignAssembly>true</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
-    <AssemblyOriginatorKeyFile>UrlPager.snk</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -65,9 +66,6 @@
     <Content Include="Documentation.zh-CN.xml" />
     <Content Include="UrlPager.bmp" />
     <Content Include="Documentation.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="UrlPager.snk" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="UrlPagerResources.resx">
