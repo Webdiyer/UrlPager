@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<UrlPagerDoc>
+  <Class name="UrlPager">
+    <summary>
+      UrlPager是一个ASP.NET WebForm应用程序中通过url进行分页的分页控件，支持使用url路由来生成自定义的分页url。
+    </summary>
+  </Class>
+  <Class name="RouteValuesExpressionBuilder">
+    <summary>
+      检索与路由页中的指定 URL 参数对应的值。
+    </summary>
+  </Class>
+  <Property name="RouteName">
+    <summary>
+      获取或设置UrlPager分页控件要使用的路由表中的路由名称。
+    </summary>
+  </Property>
+  <Property name="ContainerTag">
+    <summary>
+      获取或设置容器标签的名称。
+    </summary>
+  </Property>
+  <Property name="RouteValues">
+    <summary>
+      获取或设置要应用到当前路由中的路由值(键/值对）。
+    </summary>
+  </Property>
+  <Property name="InheritsRouteValues">
+    <summary>
+      获取或设置一个值，该值指示是否继续当前页面中的路由值，如果该值为true，则当前页面的路由值也将被加入到RouteValues属性中。
+    </summary>
+  </Property>
+  <Property name="TotalItemCount">
+    <summary>
+      获取或设置要分页的记录总数。
+    </summary>
+  </Property>
+  <Property name="PageSize">
+    <summary>
+      获取或设置每页显示的记录数。
+    </summary>
+  </Property>
+  <Property name="AutoHide">
+    <summary>
+      获取或设置一个值，该值指示要分页的总记录数不只有一页时是否自动隐藏分页控件。
+    </summary>
+  </Property>
+  <Property name="PageIndexParameterName">
+    <summary>
+      获取或设置url中当前页索引的参数名，如果该参数名在路由中不存在，则参数将被添被添加到url的QueryString参数中。
+    </summary>
+  </Property>
+  <Property name="PageNumberFormatString">
+    <summary>
+      获取或设置分页控件显示的数字页索引的格式字符串。
+    </summary>
+  </Property>
+  <Property name="PagerItemTemplate">
+    <summary>
+      获取或设置所有分页元素（数字页索引、更多页及上页、下页、首页和尾页等）的html模板字符串。
+    </summary>
+  </Property>
+  <Property name="CurrentPageNumberFormatString">
+    <summary>
+      获取或设置当前页索引文本格式字符串。
+    </summary>
+  </Property>
+  <Property name="NumericPagerItemTemplate">
+    <summary>
+      获取或设置数字页索引的html模板字符串。
+    </summary>
+  </Property>
+  <Property name="CurrentPagerItemTemplate">
+    <summary>
+      获取或设置当前页索引的html模板字符串。
+    </summary>
+  </Property>
+  <Property name="NavigationPagerItemTemplate">
+    <summary>
+      获取或设置上页、下页、首页和尾页四个分页元素的html模板字符串。
+    </summary>
+  </Property>
+  <Property name="DisabledPagerItemTemplate">
+    <summary>
+      获取或设置不活动的分页元素的html模板字符串。
+    </summary>
+  </Property>
+  <Property name="MorePagerItemTemplate">
+    <summary>
+      获取或设置更多页分页元素的html模板字符串。
+    </summary>
+  </Property>
+  <Property name="AlwaysShowFirstLastPageNumber">
+    <summary>
+      获取或设置一个值，该值指示是否总是显示第一页和最后一页数字页索引。
+    </summary>
+  </Property>
+  <Property name="NumericPagerItemCount">
+    <summary>
+      获取或设置分页控件显示的数字页索引的数目。
+    </summary>
+  </Property>
+  <Property name="ShowPrevNext">
+    <summary>
+      获取或设置一个值，该值指示是否显示前一页和后一页分页元素。
+    </summary>
+  </Property>
+  <Property name="PrevPageText">
+    <summary>
+      获取或设置前一页分页元素显示的文本。
+    </summary>
+  </Property>
+  <Property name="NextPageText">
+    <summary>
+      获取或设置后一页分页元素显示的文本。
+    </summary>
+  </Property>
+  <Property name="ShowNumericPagerItems">
+    <summary>
+      获取或设置一个值，该值指示是否显示数字页索引分页元素。
+    </summary>
+  </Property>
+  <Property name="ShowFirstLast">
+    <summary>
+      获取或设置一个值，该值指示是否显示首页和尾页分页元素。
+    </summary>
+  </Property>
+  <Property name="FirstPageText">
+    <summary>
+      获取或设置首页分页元素显示的文本。
+    </summary>
+  </Property>
+  <Property name="LastPageText">
+    <summary>
+      获取或设置尾页分页元素显示的文本。
+    </summary>
+  </Property>
+  <Property name="ShowMorePagerItems">
+    <summary>
+      获取或设置一个值，该值指示是否显示更多页分页元素。
+    </summary>
+  </Property>
+  <Property name="MorePageText">
+    <summary>
+      获取或设置更多页分页元素显示的文本。
+    </summary>
+  </Property>
+  <Property name="ShowDisabledPagerItems">
+    <summary>
+      获取或设置一个值，该值指示是否显示不活动的分页元素（当前页为第一页时为首页和前一页，当前页为最后一页时为尾页和后一页）。
+    </summary>
+  </Property>
+  <Property name="ReversePageIndex">
+    <summary>
+      获取或设置一个值，该值指示是否以反方向显示分页页索引参数，以利于优化搜索引擎搜索结果。
+    </summary>
+  </Property>
+  <Property name="CurrentPageIndex">
+    <summary>
+      获取或设置当前页索引。
+    </summary>
+  </Property>
+  <Property name="StartItemIndex">
+    <summary>
+      获取当前页的起始数据项的索引。
+    </summary>
+  </Property>
+  <Property name="EndItemIndex">
+    <summary>
+      获取当前页的结束数据项的索引。
+    </summary>
+  </Property>
+  <Property name="TotalPageCount">
+    <summary>
+      获取要分页的数据的总页数。
+    </summary>
+  </Property>
+<Method name="OnPageChanged">
+  <summary>
+    觖发PageChanged事件。
+  </summary>
+</Method>
+<Event name="PageChanged">
+  <summary>
+    分页控件所在的页面重新加载且没有回发时发生。
+  </summary>
+</Event>
+</UrlPagerDoc>

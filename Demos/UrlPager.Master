@@ -1,0 +1,55 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="UrlPager.Master.cs" Inherits="Webdiyer.UrlPagerDemo.SiteMaster" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="author" content="Webdiyer (http://en.webdiyer.com)" />
+    <meta name="keywords" content="" />
+    <meta name="description" content=""/>
+    <title>UrlPager demos</title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="~/Content/bootstrap.min.css"/>
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-3">
+            <div class="panel panel-default panel-menu">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        UrlPager Demos
+                    </h4>
+                </div><div class="panel-body">
+                          <ul class="nav">
+            <li><a href="Basic" runat="server">Basic</a></li>
+            <li><a href="Postback/" runat="server">Postback</a></li>
+            <li><a href="Repeater/" runat="server">Repeater paging</a></li>
+            <li><a href="ReversePageIndex/" runat="server">Reversing page index</a></li>
+            <li><a href="RouteValues/" runat="server">Setting RouteValues</a></li>
+            <li><a href="bootstrap/" runat="server">Bootstrap styles</a></li>
+        </ul>
+                      </div>
+                </div></div>
+            <div class="col-xs-9">
+            <h1 class="page-header"><%:Page.Title %></h1>
+                    <div class="alert alert-info"><%:Page.MetaDescription %>
+                            <asp:ContentPlaceHolder ID="description" runat="server">
+                            </asp:ContentPlaceHolder></div>
+                <form runat="server" id="form1">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </form>
+            </div>
+        </div>
+    </div>
+    <footer class="container text-center">
+        <hr class="clearfix" />
+        <a href="http://en.webdiyer.com/urlpager/docs/">Documentation</a>&nbsp;&nbsp;<a href="http://en.webdiyer.com/urlpager/" target="_blank">Official site</a><br />
+            &copy; 2009-2015 <a href="http://en.webdiyer.com" target="_blank">Webdiyer</a>
+    </footer>
+</body>
+</html>

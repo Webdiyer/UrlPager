@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<UrlPagerDoc>
+  <Class name="UrlPager">
+    <summary>
+      Custom paging control for asp.net webform application, It supports url routing and paging through url parameter.
+    </summary>
+  </Class>
+  <Class name="RouteValuesExpressionBuilder">
+    <summary>
+      Retrieves the route values that corresponds to a specified URL parameter in a routed page.
+    </summary>
+  </Class>
+  <Property name="RouteName">
+    <summary>
+      Gets or sets the name of the route that is used to generate paging urls.
+    </summary>
+  </Property>
+  <Property name="ContainerTag">
+    <summary>
+      Gets or sets the HTML tag name for the container element of the pager.
+    </summary>
+  </Property>
+  <Property name="RouteValues">
+    <summary>
+      The route values to be applied to the route.
+    </summary>
+  </Property>
+  <Property name="InheritsRouteValues">
+    <summary>
+      Gets or sets a value indicating whether UrlPager should inherit the route values from the current http context.
+    </summary>
+  </Property>
+  <Property name="TotalItemCount">
+    <summary>
+      Gets or sets the total number of records that are available for paging.
+    </summary>
+  </Property>
+  <Property name="PageSize">
+    <summary>
+      Gets or sets the number of records that are displayed for each page of data.
+    </summary>
+  </Property>
+  <Property name="AutoHide">
+    <summary>
+      Gets or sets a value indicating whether UrlPager should be hidden if there's only one page of data.
+    </summary>
+  </Property>
+  <Property name="PageIndexParameterName">
+    <summary>
+      Gets or sets the page index parameter name in the current route.
+    </summary>
+  </Property>
+  <Property name="PageNumberFormatString">
+    <summary>
+      Gets or sets the format string for all numeric pager items.
+    </summary>
+  </Property>
+  <Property name="PagerItemTemplate">
+    <summary>
+      Gets or sets the html template to be applied to all pager items.
+    </summary>
+  </Property>
+  <Property name="CurrentPageNumberFormatString">
+    <summary>
+      Gets or sets the format string for the current page number.
+    </summary>
+  </Property>
+  <Property name="NumericPagerItemTemplate">
+    <summary>
+      Gets or sets the html template for the numeric pager items.
+    </summary>
+  </Property>
+  <Property name="CurrentPagerItemTemplate">
+    <summary>
+      Gets or sets the html template to be applied to the current page pager item.
+    </summary>
+  </Property>
+  <Property name="NavigationPagerItemTemplate">
+    <summary>
+      Gets or sets the html template to be applied to the first, previous, next and last page pager items.
+    </summary>
+  </Property>
+  <Property name="DisabledPagerItemTemplate">
+    <summary>
+      Gets or sets the html template to be applied to the disabled pager items.
+    </summary>
+  </Property>
+  <Property name="MorePagerItemTemplate">
+    <summary>
+      Gets or sets the html template to be applied to the more pager items.
+    </summary>
+  </Property>
+  <Property name="AlwaysShowFirstLastPageNumber">
+    <summary>
+      Gets or sets a value indicating whether the first and the last numeric pager items should be displaye.
+    </summary>
+  </Property>
+  <Property name="NumericPagerItemCount">
+    <summary>
+      Gets or sets the maximum number of the numeric pager items to be displayed.
+    </summary>
+  </Property>
+  <Property name="ShowPrevNext">
+    <summary>
+      Gets or sets a value indicating whether the previous page and the next page pager items should be displayed.
+    </summary>
+  </Property>
+  <Property name="PrevPageText">
+    <summary>
+      Gets or sets the text displayed for the previous page pager item.
+    </summary>
+  </Property>
+  <Property name="NextPageText">
+    <summary>
+      Gets or sets the text displayed for the next page pager item.
+    </summary>
+  </Property>
+  <Property name="ShowNumericPagerItems">
+    <summary>
+      Gets or sets a value indicating whether the numeric pager items should be displayed.
+    </summary>
+  </Property>
+  <Property name="ShowFirstLast">
+    <summary>
+      Gets or sets a value indicating whether the first page and the last page pager items should be displayed.
+    </summary>
+  </Property>
+  <Property name="FirstPageText">
+    <summary>
+      Gets or sets the text displayed for the first page button.
+    </summary>
+  </Property>
+  <Property name="LastPageText">
+    <summary>
+      Gets or sets the text displayed for the last page pager item.
+    </summary>
+  </Property>
+  <Property name="ShowMorePagerItems">
+    <summary>
+      Gets or sets a value indicating whether the more pager items should be displayed.
+    </summary>
+  </Property>
+  <Property name="MorePageText">
+    <summary>
+      Gets or sets the text displayed for the more pager items.
+    </summary>
+  </Property>
+  <Property name="ShowDisabledPagerItems">
+    <summary>
+      Gets or sets a value indicating whether the disabled pager items should be displayed.
+    </summary>
+  </Property>
+  <Property name="ReversePageIndex">
+    <summary>
+      Gets or sets a value indicating whether page index in the url should be reversed, that means the last page index will be 1 while the current page index is the total page number.
+    </summary>
+  </Property>
+  <Property name="CurrentPageIndex">
+    <summary>
+      Gets or sets the current page index.
+    </summary>
+  </Property>
+  <Property name="StartItemIndex">
+    <summary>
+      Gets the index of the first data item that is displayed on the current page.
+    </summary>
+  </Property>
+  <Property name="EndItemIndex">
+    <summary>
+      Gets the index of the last data item that is displayed on the current page.
+    </summary>
+  </Property>
+  <Property name="TotalPageCount">
+    <summary>
+      Gets the total number of pages.
+    </summary>
+  </Property>
+  <Method name="OnPageChanged">
+    <summary>
+      Raises the PageChanged event.
+    </summary>
+  </Method>
+  <Event name="PageChanged">
+    <summary>
+      Occurs when one of the pager buttons is clicked, but after the control handles the paging operation.
+    </summary>
+  </Event>
+</UrlPagerDoc>
